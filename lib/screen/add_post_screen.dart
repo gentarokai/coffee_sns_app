@@ -11,7 +11,6 @@ class AddPostScreen extends StatefulWidget {
 
 class _AddPostScreenState extends State<AddPostScreen> {
   final _formKey = GlobalKey<FormState>();
-
   final _imageUrlController = TextEditingController();
   final _authorController = TextEditingController();
   final _countryOfOriginController = TextEditingController();
@@ -35,7 +34,6 @@ class _AddPostScreenState extends State<AddPostScreen> {
       );
 
       // ここで新しい投稿を保存する処理を追加
-      print(newPost.aroma);
       Navigator.pop(context);
     }
   }
